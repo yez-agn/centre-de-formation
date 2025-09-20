@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MTRADING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+    body{background:#0d1117;color:#fff;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#0b0f14;position:sticky;top:0;z-index:100;}
+    header .logo{font-size:1.8rem;font-weight:700;color:#ffd700;}
+    nav ul{display:flex;gap:30px;list-style:none;}
+    nav ul li a:hover{color:#ffd700;}
+
+    /* Hero */
+    .hero{text-align:center;padding:60px 20px;}
+    .hero h1{font-size:2.5rem;color:#ffd700;margin-bottom:20px;}
+    .hero p{font-size:1.2rem;color:#ccc;}
+
+    /* Contact */
+    .contact-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:50px 20px;max-width:1100px;margin:auto;}
+    .contact-info{background:#0b0f14;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.6);}
+    .contact-info h2{color:#ffd700;margin-bottom:20px;}
+    .contact-info p{margin-bottom:15px;color:#ccc;}
+    .contact-info a{color:#ffd700;}
+
+    .contact-form{background:#0b0f14;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.6);}
+    .contact-form h2{color:#ffd700;margin-bottom:20px;}
+    form input, form textarea{width:100%;padding:12px;margin-bottom:15px;border:none;border-radius:5px;outline:none;}
+    form input{height:45px;}
+    form textarea{min-height:120px;resize:none;}
+    form button{background:#ffd700;color:#0d1117;font-weight:700;padding:12px;border:none;border-radius:5px;cursor:pointer;transition:0.3s;}
+    form button:hover{background:#e6c200;}
+
+    /* Footer */
+    footer{background:#0b0f14;text-align:center;padding:20px;font-size:0.9rem;color:#888;margin-top:40px;}
+
+    @media(max-width:768px){
+      .contact-container{grid-template-columns:1fr;}
+      .hero h1{font-size:2rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MTRADING</div>
+    <nav>
+      <ul>
+        <li><a href="acceuil.html">Accueil</a></li>
+        <li><a href="à propos.html">À propos</a></li>
+        <li><a href="formations.html">Formations</a></li>
+        <li><a href="analyse.html">Analyse</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contactez-nous</h1>
+    <p>Une question, un partenariat ou besoin d’assistance ? Envoyez-nous un message.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>Nos coordonnées</h2>
+      <p><strong>Email :</strong> <a href="mtrade177@gmail.com">mtrade177@gmail.com</a></p>
+      <p><strong>Téléphone :</strong> 002290196484529 </p>
+      <p><strong>Adresse :</strong> Cotonou, Bénin</p>
+      <p><strong>Réseaux :</strong><br>
+        <a href="#">TikTok</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Telegram</a> |
+        <a href="wwww.facebook.com">facebook</a>|
+        <a href="t/whatsapp">whatsapp</a>
+      </p>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="contact-form">
+      <h2>Envoyez-nous un message</h2>
+      <form action="https://formspree.io/f/mknprqgd" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 MTRADING. Tous droits réservés. | <a href="#">Mentions légales</a>
+  </footer>
+
+</body>
+</html>

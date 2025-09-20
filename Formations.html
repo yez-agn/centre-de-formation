@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - [Nom du site]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
+        body { background:#0d1117; color:#fff; line-height:1.6; }
+        a { text-decoration:none; color:inherit; }
+
+        header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#0b0f14; position:sticky; top:0; z-index:100; }
+        header .logo { font-size:1.8rem; font-weight:700; color:#ffd700; }
+        nav ul { display:flex; gap:30px; list-style:none; }
+        nav ul li a:hover { color:#ffd700; }
+
+        /* Section Hero */
+        .hero {
+            text-align:center;
+            padding:80px 20px;
+        }
+        .hero h1 { font-size:2.8rem; color:#ffd700; margin-bottom:20px; }
+        .hero p { font-size:1.2rem; color:#ccc; margin-bottom:30px; }
+        .hero button {
+            padding:15px 30px;
+            background:#ffd700;
+            border:none;
+            color:#0d1117;
+            font-weight:700;
+            cursor:pointer;
+            border-radius:5px;
+            transition:0.3s;
+        }
+        .hero button:hover { background:#e6c200; }
+
+        /* Section formations */
+        .courses {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap:30px;
+            padding:50px 20px;
+        }
+        .course-card {
+            background:#0b0f14;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 5px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s;
+        }
+        .course-card:hover { transform:translateY(-10px); }
+        .course-card img { width:100%; height:180px; object-fit:cover; }
+        .course-content { padding:20px; }
+        .course-content h3 { font-size:1.3rem; color:#ffd700; margin-bottom:10px; }
+        .course-content p { font-size:0.95rem; color:#ccc; margin-bottom:15px; }
+        .course-content button {
+            padding:10px 20px;
+            background:#ffd700;
+            border:none;
+            border-radius:5px;
+            font-weight:700;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        .course-content button:hover { background:#e6c200; }
+
+        /* Footer */
+        footer { background:#0b0f14; text-align:center; padding:20px; font-size:0.9rem; color:#888; }
+
+        @media(max-width:768px){
+            .hero h1 { font-size:2rem; }
+            .hero p { font-size:1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">MTRADING</div>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="à propos.html">À propos</a></li>
+                <li><a href="Formations.html">Formations</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Formations Trading Professionnelles</h1>
+        <p>Découvrez nos modules complets, du niveau débutant à expert, pour maîtriser le Forex, les actions et le crypto-trading.</p>
+        <button><a href="inscrivez-vous maintenant.html">Inscrivez-vous maintenant</a></button>
+    </section>
+
+    <!-- Section Courses -->
+    <section class="courses">
+        <div class="course-card">
+            <img src="https://source.unsplash.com/400x250/?finance,chart" alt="Formation Débutant">
+            <div class="course-content">
+                <h3>Trading Débutant absolu</h3>
+                <p>Introduction au Forex et aux marchés financiers. Concepts de base, terminologie et premiers pas.</p>
+                <button><a href="trading débutant absolu.html">Voir le cours</a></button>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://source.unsplash.com/400x250/?finance,chart" alt="Formation Débutant">
+            <div class="course-content">
+                <h3>Trading fondamentaux</h3>
+                <p>Introduction au Forex et aux marchés financiers. Concepts de base, terminologie et premiers pas.</p>
+               <a href="trading fondamentaux.html"> <button> Voir le cours</button></a>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://source.unsplash.com/400x250/?trading,chart" alt="Formation Intermédiaire">
+            <div class="course-content">
+                <h3>Trading Intermédiaire</h3>
+                <p>Analyse technique avancée, gestion du risque et stratégies pour trader avec confiance.</p>
+                <button><a href="trading intermédiaire.html">Voir le cours</a></button>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://source.unsplash.com/400x250/?stock,finance" alt="Formation Avancé">
+            <div class="course-content">
+                <h3>Trading Avancé</h3>
+                <p>Techniques professionnelles, trading algorithmique et optimisation des performances sur les marchés.</p>
+                <button><a href="trading avancé.html">Voir le cours</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 MTRADING. Tous droits réservés. | <a href="#">Contact</a> | Suivez-nous sur <a href="#">TikTok</a>, <a href="#">YouTube</a>
+    </footer>
+
+</body>
+</html>

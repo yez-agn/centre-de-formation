@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - MTRADINGS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #0b0f14;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffd700;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Section À propos */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(24, 0, 0, 0.6);
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-content h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .about-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .about-content ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            color: #ccc;
+        }
+
+        .about-content ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+        }
+
+        /* Section équipe */
+        .team {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            color: #ffd700;
+            margin-bottom: 40px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background: #0b0f14;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+        }
+
+        .member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .member h3 {
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        .member p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background: #0b0f14;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        @media(max-width: 768px){
+            .about {
+                flex-direction: column;
+            }
+            .team-members {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">MTRADING</div>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="à propos.html">À propos</a></li>
+                <li><a href="Formations.html">Formations</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section class="about">
+        <div class="about-image">
+            <img src="https://source.unsplash.com/600x400/?trading,finance" alt="Trading">
+        </div>
+        <div class="about-content">
+            <h1>Notre expertise</h1>
+            <p>Avec plus de 5 ans d’expérience sur le marché Forex et actions, nous accompagnons les traders débutants et avancés pour développer leur potentiel et maîtriser le marché.</p>
+            <ul>
+                <li>Formations complètes du niveau débutant à avancé</li>
+                <li>Analyse technique et fondamentale professionnelle</li>
+                <li>Coaching personnalisé pour chaque trader</li>
+                <li>Accès à des outils et signaux performants</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section équipe -->
+    <section class="team">
+        <h2>Rencontrez notre équipe</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="https://source.unsplash.com/200x200/?man,portrait" alt="Membre équipe">
+                <h3>ADIMADEGBEHOU Yezid Agnide</h3>
+                <p>Fondateur & Trader Senior</p>
+            </div>
+            <div class="member">
+                <img src="https://source.unsplash.com/200x200/?woman,portrait" alt="Membre équipe">
+                <h3>PROSPER DELANO</h3>
+                <p>Analyste Marché</p>
+            </div>
+            <div class="member">
+                <img src="https://source.unsplash.com/200x200/?man,portrait,2" alt="Membre équipe">
+                <h3>ALIANE DIANE</h3>
+                <p>Coach Trading</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 MTRADING. Tous droits réservés. | <a href="#">Contact</a> | Suivez-nous sur <a href="#">TikTok</a>, <a href="#">YouTube</a>
+    </footer>
+
+</body>
+</html>

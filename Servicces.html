@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - [Nom du site]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+    body{background:#0d1117;color:#fff;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    html{scroll-behavior:smooth;}
+
+    /* Header */
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#0b0f14;position:sticky;top:0;z-index:100;}
+    header .logo{font-size:1.8rem;font-weight:700;color:#ffd700;}
+    nav ul{display:flex;gap:30px;list-style:none;}
+    nav ul li a:hover{color:#ffd700;}
+
+    /* Hero */
+    .hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:100vh;background:url('https://source.unsplash.com/1600x900/?finance,trading') no-repeat center/cover;position:relative;}
+    .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+    .hero h1, .hero p, .hero a{position:relative;z-index:1;}
+    .hero h1{font-size:2.8rem;color:#ffd700;margin-bottom:20px;}
+    .hero p{font-size:1.2rem;color:#ccc;margin-bottom:30px;}
+    .cta-btn{display:inline-block;background:#ffd700;color:#0d1117;padding:15px 25px;font-weight:700;border-radius:5px;transition:0.3s;}
+    .cta-btn:hover{background:#e6c200;}
+
+    /* Services */
+    .services{padding:80px 20px;text-align:center;background:#0b0f14;}
+    .services h2{color:#ffd700;font-size:2.2rem;margin-bottom:40px;}
+    .service-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1100px;margin:auto;}
+    .card{background:#141a22;padding:25px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.6);transition:transform 0.3s;}
+    .card:hover{transform:translateY(-10px);}
+    .card h3{color:#ffd700;margin-bottom:15px;}
+    .card p{color:#ccc;font-size:0.95rem;}
+
+    /* Footer */
+    footer{background:#0b0f14;text-align:center;padding:20px;font-size:0.9rem;color:#888;}
+
+    @media(max-width:768px){
+      .hero h1{font-size:2rem;}
+      .hero p{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">[Nom du site]</div>
+    <nav>
+      <ul>
+        <li><a href="acceuil.html">Accueil</a></li>
+        <li><a href="à propos.html">À propos</a></li>
+        <li><a href="formations.html">Formations</a></li>
+        <li><a href="analyse.html">Analyse</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Bienvenue sur [Nom du site]</h1>
+    <p>Votre espace dédié au trading, aux analyses et aux formations.</p>
+    <a href="#services" class="cta-btn">Commencer maintenant</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Formations Trading</h3>
+        <p>Apprenez à trader pas à pas grâce à nos cours adaptés aux débutants et aux traders confirmés.</p>
+      </div>
+      <div class="card">
+        <h3>Analyses de Marché</h3>
+        <p>Recevez des analyses techniques et fondamentales précises pour anticiper les mouvements du marché.</p>
+      </div>
+      <div class="card">
+        <h3>Signaux & Coaching</h3>
+        <p>Bénéficiez de signaux de trading fiables et d’un coaching personnalisé pour booster vos résultats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 [Nom du site]. Tous droits réservés. | <a href="#">Mentions légales</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyse & Signaux du Marché</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b, #000814);
+      color: #f8f9fa;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #001d3d, #003566);
+      color: #ffd60a;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    .card {
+      background: #1b263b;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    }
+    .card h2 {
+      margin-bottom: 15px;
+      color: #ffd60a;
+    }
+    iframe {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      height: 500px;
+    }
+    .cta {
+      display: block;
+      text-align: center;
+      margin: 20px auto 0 auto;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #003566, #001d3d);
+      color: #ffd60a;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta:hover {
+      background: linear-gradient(135deg, #ffd60a, #ffc300);
+      color: #001d3d;
+    }
+    .ads {
+      text-align: center;
+      background: #0d1b2a;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Analyse & Signaux du Marché</header>
+  <div class="container">
+
+    <!-- Carte Graphique -->
+    <div class="card">
+      <h2>Graphique en direct</h2>
+      <!-- TradingView Widget -->
+      <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_12345&symbol=EURUSD&interval=60&hidesidetoolbar=1&symboledit=1&saveimage=0&toolbarbg=f1f3f6&studies=[]&theme=dark&style=1&timezone=Etc/UTC&withdateranges=1&hidevolume=0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Carte Signaux -->
+    <div class="card">
+      <h2>Signaux Automatiques</h2>
+      <!-- Widget Investing.com -->
+      <iframe src="https://www.widgets.investing.com/live-currency-cross-rates?theme=darkTheme&roundedCorners=true" height="400"></iframe>
+      <a href="TON_LIEN_BROKER" class="cta">Exécuter ces signaux chez notre broker partenaire</a>
+    </div>
+
+    <!-- Carte Publicité -->
+    <div class="ads">
+      <!-- Exemple emplacement AdSense -->
+      <p>Zone Publicitaire (AdSense / Media.net)</p>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXX"
+           data-ad-slot="YYYYYYY"
+           data-ad-format="auto"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+  </div>
+</body>
+</html>

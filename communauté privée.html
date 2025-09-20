@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communauté Privée - Partage d'opportunités</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #0b0f14;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffd700;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #ffd700;
+      color: #0d1117;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin: 10px 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e6c200;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media(max-width: 500px){
+      .container {
+        padding: 20px;
+      }
+      .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Partage d'opportunités</h1>
+    <p>Accédez à nos signaux de trading et recevez des alertes exclusives en temps réel.</p>
+
+    <!-- Bouton vers la page des signaux -->
+    <a class="btn" href="https://tonsite.com/analyses-et-signaux" target="_blank">
+      <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/combo-chart.png" alt="Signaux">
+      Voir les signaux de trading
+    </a>
+
+    <!-- Bouton vers le canal Telegram pour les alertes -->
+    <a class="btn" href="https://t.me/TONCANAL" target="_blank">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+      Recevoir les alertes & notifications
+    </a>
+  </div>
+
+</body>
+</html>

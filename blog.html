@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - MTRADING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+    body{background:#0d1117;color:#fff;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#0b0f14;position:sticky;top:0;z-index:100;}
+    header .logo{font-size:1.8rem;font-weight:700;color:#ffd700;}
+    nav ul{display:flex;gap:30px;list-style:none;}
+    nav ul li a:hover{color:#ffd700;}
+
+    /* Hero */
+    .hero{text-align:center;padding:60px 20px;}
+    .hero h1{font-size:2.5rem;color:#ffd700;margin-bottom:20px;}
+    .hero p{font-size:1.2rem;color:#ccc;}
+
+    /* Articles */
+    .blog-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;padding:50px 20px;}
+    .post{background:#0b0f14;border-radius:10px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.6);transition:transform 0.3s;}
+    .post:hover{transform:translateY(-10px);}
+    .post img{width:100%;height:180px;object-fit:cover;}
+    .post-content{padding:20px;}
+    .post-content h3{color:#ffd700;margin-bottom:10px;font-size:1.3rem;}
+    .post-content p{color:#ccc;font-size:0.95rem;margin-bottom:15px;}
+    .post-content a{display:inline-block;padding:10px 15px;background:#ffd700;color:#0d1117;font-weight:700;border-radius:5px;transition:0.3s;}
+    .post-content a:hover{background:#e6c200;}
+
+    /* Footer */
+    footer{background:#0b0f14;text-align:center;padding:20px;font-size:0.9rem;color:#888;}
+
+    @media(max-width:768px){
+      .hero h1{font-size:2rem;}
+      .hero p{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MTRADING</div>
+    <nav>
+      <ul>
+        <li><a href="acceuil.html">Accueil</a></li>
+        <li><a href="à propos.html">À propos</a></li>
+        <li><a href="formations.html">Formations</a></li>
+        <li><a href="analyse.html">Analyse</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Blog & Actualités</h1>
+    <p>Découvrez nos derniers articles sur le trading, le Forex, la crypto et les marchés financiers.</p>
+  </section>
+
+  <!-- Articles -->
+  <section class="blog-container">
+    <div class="post">
+      <img src="https://source.unsplash.com/400x250/?forex,finance" alt="Article Forex">
+      <div class="post-content">
+        <h3>5 erreurs à éviter en trading Forex</h3>
+        <p>Le trading peut être rentable si vous évitez ces pièges fréquents. Découvrez nos conseils pratiques pour progresser.</p>
+        <a href="#">Lire plus</a>
+      </div>
+    </div>
+    <div class="post">
+      <img src="https://source.unsplash.com/400x250/?crypto,bitcoin" alt="Article Crypto">
+      <div class="post-content">
+        <h3>Bitcoin : quelles perspectives en 2025 ?</h3>
+        <p>La crypto-monnaie phare attire toujours plus d’investisseurs. Analyse des tendances et prévisions pour l’année.</p>
+        <a href="#">Lire plus</a>
+      </div>
+    </div>
+    <div class="post">
+      <img src="https://source.unsplash.com/400x250/?stocks,market" alt="Article Bourse">
+      <div class="post-content">
+        <h3>Comment analyser une action en bourse</h3>
+        <p>Découvrez les fondamentaux de l’analyse boursière pour investir intelligemment et limiter les risques.</p>
+        <a href="#">Lire plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 MTRADING. Tous droits réservés. | <a href="#">Contact</a> | Suivez-nous sur <a href="#">TikTok</a>, <a href="#">YouTube</a>
+  </footer>
+
+</body>
+</html>
